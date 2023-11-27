@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+            Alpha Mart</title>
+            <link rel="icon" type="image/png" href="main.png">
+            <!--awsm font-->
+            <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="login.css">
+
+
+            <link rel = "stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+<!-- <div class="image-container">
+    <img src = "backgr.jpg">
+</div> -->
+
+<!--hreder section, navbar-->
+<header class = "header">
+    <!-- <a href = "#" class ="logo"><i class="fa fa-shopping-cart"> </i> AlphaMart</a> -->
+    <a href="#" class="logo">
+        <!-- <img src="main.png" width="30" height="25"> -->
+        <span>ALPHA MART</span>
+      </a>
+      
+    <nav class="navbar">
+        <!-- <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div> -->
+
+    <a href="#HOME">HOME</a>
+    <a href= "#ALL PRODUCTS">ALL PRODUCTS</a>
+    <a href= "#OFFERS">OFFERS</a>
+    <a href= "#STORES">STORES</a>
+    <a href= "#OUR BLOGS">OUR BLOGS</a>
+    <a href= "#CONTACT US">CONTACT US</a>
+</nav>
+
+</header>
+<!-- header section ends -->
+<!-- home section -->
+<section class="home" id="HOME">
+    <div class="content">
+        <h3>Pick The <span>Best,</span> Be The Best</h3>
+        <p>"Unlock your fitness universe! Step into your personalized hub – where goals meet gains & every login is a stride towards a stronger,  healthier you."</p>
+
+        <a href="#" class="btn"><b>Login</b></a>
+    </div>
+
+</section>
+<!-- home section -->
+
+<!-- products section -->
+
+
+<!-- products section -->
+
+
+<!-- products section -->
+
+
+<!-- view store -->
+
+
+<!-- view store -->
+
+<!-- //// peoples reviews -->
+
+<!-- //// peoples reviews -->
+
+<!-- BLOG SECTION -->
+
+
+<!-- BLOG SECTION -->
+<!-- login section -->
+
+<div class="loogin" id="loogin">
+    <div class="box-container">
+        <div class="row">
+           <div class="col-xs-12">
+               <div class="page-header">
+                <h1><b>My Account</b></h1>
+                </div>
+                <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="well">
+                        <form id="login" method="post">
+                            <input type="hidden" name="redirect" value>
+                            <h3> Return Customer? Log In.</h3>
+                            <hr>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="username">My E-mail Address is</label>
+                                    <input type="text" id="username"name="username" class="form-control" 
+                                    value size="25" placeholder="name@example.com" required>
+                                    <p class="help-block hidden">
+                                    <i class="fa fa-question-circle"></i>
+                                    " Forgot Your Username "
+                                    <a href ="login.html">click here</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="password">My password is</label>
+                                    <input type="password" id="password" name="password" class="form-control"
+                                    size="25" autocomplete="off" required>
+                                    <p class="help-block">
+                                        <i class="fa fa-question-circle"></i>
+                                        " Forgot Your Password "
+                                        <a href="payment.jpg" aria-label="click 
+                                        if you forgot your password"> Click Here</a>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <button name="submit" type="submit" class="btn btn-lg btn-success btn-block">
+                                <i class="fa fa-user"></i>
+                                Login Now
+                            </button>
+                        </form>
+                       </div>
+                   </div>
+                   <br>
+                   <div class="col-s-12 col-mdd-6">
+                       <div class="well">
+                           <form id="register" method="post" action="login.html">
+                            <input type="hidden" name="redirect" value>
+                            <input type="hidden" name="reg_username" value="5949810620"> 
+                            <h3>New customer? Create an Account.</h3>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="form-group">
+                                        <label for="reg_email">E-mail Address</label>
+                                        <span class="text-danger small">Required</span>
+                                        <input class="form-control" type="email" id="reg_email" name="reg_email"
+                                        value size="25" required>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_password">Password</label>
+                                        <span class="text-danger small">Required</span>
+                                        <input class="form-control" type="password" id="reg-email" name="req_password"
+                                        size="25" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="reg_password2">Confirm Password</label>
+                                        <span class="text-danger small">Required</span>
+                                        <input class="form-control" type="password" id="reg_password2" name="reg_password2"
+                                        size="25" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label> 
+                                                <input name="regoptin" type="checkbox" value="y" data-message="You can unsubscribe at any time.">
+                                                " Subscribe to our newsletter and we'll keep you up to date on our products and services. "
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="y" class="terms_box" required>
+                                                " I have read and agree to "
+                                                <a herf="#" data-toggle="model" data-target="#termModel">Terms & Conditions</a>
+                                                " and "
+                                                <a herf="#" data-toggle="model" data-target="#privacyModel">Privacy Policy</a>
+                                                ". "
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="form-group">
+                                        <input name="fn" type="hidden" value="proc">
+                                        <button name="submit" type="submit" class="btn btn-lg btn-block btn-success">
+                                        <i class="fa fa-plus"></i>
+                                          Register and Continue
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- login section -->
+<section class="footer" id="CONTACT US">
+    <!-- <img src="main.png" alt="Main Image" width="200" height="100" class="fade"> -->
+    <div class="box-container">
+        <div class="box">
+            <h3>Service</h3>
+            <p>My Account</p>
+            <p>Wholesalers</p>
+        </div>
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+        <div>
+            <div class="box">
+                <h3>Shipping</h3>
+                <p>Delivery Policy</p>
+                <p>Track Your Order</p>
+                <a href="your_payment_url_here" class="payment-link">Payment</a>
+                <div class="payment" id="payment">
+                    <a href="your_payment_url_here"><img src="payment.jpg" alt="Payment"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3>Information</h3>
+            <p>Privacy Policy</p>
+            <p>Returns Policy</p>
+            <p>Security Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Location</p>
+        </div>
+        <div class="box2">
+            <h3>Stay In Touch</h3>
+            <p>Subscribe to our newsletter and we'll keep you up to date on our products and services.</p>
+            <form action="#" method="post">
+                <div class="email-box">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="Checkbox">
+                    <input type="checkbox" id="agree" name="agree" value="yes" required>
+                    <span class="terms-text">I have read and agree to</span>
+                    <a href="#" class="terms-link">Terms & Conditions</a>
+                    <span class="terms-text">and</span>
+                    <a href="#" class="terms-link">Privacy Policy.</a>
+                </div>
+                <div class="btn">
+                        <button type="submit">Subscribe</button>
+                </div>                
+                <div class="share">
+                    <a1 href="#" class="fa fa-facebook-square text-facebook"></a1>
+                    <a2 href="#" class="fa fa-instagram"></a2>
+                    <a3 href="#" class="fa fa-youtube-square text-youtube"></a3>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="foot-panel3">
+        <div class="logo_hero">
+        </div>
+        <div class="countries">
+            <pre>India   Australia    Brazil    Canada    China    France    Germany    Italy    Japan    Mexico    Netherlands    Poland    Singapore    Spain    Turkey    United Arab Emirates    United Kingdom    United States </pre>
+
+        </div> -->
+    </div>
+    <class class="foot-panel4">
+        <div class="copyright">
+            <b>Copyright © 2023 ALPHA MART</b>
+        </div>
+        
+    </div>
+</section>
+
+</section>
+<script src="http://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src = "jS/script.js"></script>
+    </body>
+</html>

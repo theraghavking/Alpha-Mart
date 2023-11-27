@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    }
+
+body{
+    background-color:rgb(212, 205, 224);
+    text-decoration: none;
+}
+/* imp{
+    border: 0;
+    display: black;
+    max-width: 100%;
+    height:auto;
+} */
+
+:root{
+    --green:green;
+    --black:#130f40;
+    --light-cl: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgb(32, 32, 32);
+    --outline: .1rem solid rgba(0,0,0.1);
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-padding: smooth;
+    scroll-padding-top: 7rem;
+}
+.header{
+    background-color:white;
+    /* border: 2px solid; */
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2%;
+    background:white;
+    box-shadow: var(--box-shadow);
+}
+.header {
+    text-align: center; /* Center the content within the header */
+    padding: 20px; /* Add some padding for better appearance */
+  
+    /* Add any other styles you may need for your header */
+  }
+  
+  .logo {
+    text-decoration: none; /* Remove default underline on the link */
+    display: inline-block; /* Make the link a block to apply styles easily */
+    color: #333; /* Set the text color */
+  }
+  
+  .logo img {
+    vertical-align: middle; /* Align the image vertically with the text */
+    margin-right: 10px; /* Add some space between the image and text */
+    /* clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 100%,7% 50%,0% 0%);
+    background-color: white; */
+    border-radius: .4rem;
+    width:20%;
+  }
+  
+  .logo span {
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Adjust the font size as needed */
+    background-color: black;
+    color: rgb(218, 186, 9);
+    display: inline-block;
+    padding: .5rem 2.5rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 100%,7% 50%,0% 0%);
+    }
+
+
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+.logo i{
+    color:black;
+}
+#menu-btn{
+    display: none;
+}
+.navbar.active{
+   right:2rem;
+   transition: .4s linear;
+}
+.navbar a{
+    font-size: 1.3rem;
+    margin:0 1rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.navbar a:hover{
+    color: var(--green);
+}
+
+.icons div{
+    /* border: 1px solid; */
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color:rgb(212, 205, 224);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align:center;
+    cursor: pointer;
+}
+.icons div:hover
+{
+    background-color: var(--green);
+    color:white;
+}
+.search-form{
+    border: 0px solid;
+    position:absolute;
+    top: 110%;
+    right: 2rem;
+    width: 50rem;
+    height:4.5rem;
+    background:white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.search-form input{
+    height: 100%;
+    width: 100%;
+    background:none;
+    text-transform: none;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+}
+
+.search-form label{
+    font-size:2.2rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+    color: grey;
+}
+
+
+
+
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align:center;
+    padding: 0.2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+}
+.heading span{
+    background-color: var(--green);
+    color: white;
+    display: inline-block;
+    padding: .5rem 2.5rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 100%,7% 50%,0% 0%);
+}
+
+.btn{
+    border:1px solid black;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+} 
+
+.btn:hover{
+    background:var(--green);
+    color:#fff;
+}
+
+
+
+
+* .home{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    /* background: url(./home.jpg) no-repeat; */
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 27rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    /* border: 1px solid white; */
+    border-radius: 1rem;
+    text-align:center;
+    width: 60rem;
+    background-color:black;
+    padding-bottom: 1rem;
+} 
+.home .content h3{
+    color: white;
+    font-size: 4rem;
+    padding: .5rem 0;
+}
+.home .content p{
+    color:rgb(218, 186, 9);
+    font-size: 1.3rem;
+    padding: 1rem .5rem;
+}
+.home .content a{
+    color: white;
+    border:1px white;
+    border-radius: .5rem;
+}
+
+
+
+/* login styling */
+/* .loogin .box-container{ 
+   background-color: white;
+} */
+
+
+
+
+/* Reset some default styles */
+
+
+/* Style the well (login and register boxes) */
+/* Basic styling for the login page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#loogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding-top: 3rem;
+}
+
+.box-container {
+    width: 100%;
+    max-width: 800px;
+}
+.well {
+    background-color: #c4d3e2;
+    /* border: 15px black; */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.well form {
+    margin-top: 20px;
+}
+
+.well h3 {
+    color: #007bff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.page-header{
+    padding-bottom: 2.2rem 0;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+.form-group label{
+    
+}
+
+h1 {
+    color: #007bff;
+
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.help-block {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #6c757d;
+}
+.help-block a{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Visual separation between login and registration boxes */
+@media (min-width: 768px) {
+    .col-xs-12.col-md-6:last-child {
+        margin-left: 20px;
+    }
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 767px) {
+    .box-container {
+        padding: 20px;
+    }
+
+    .well {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer style */
+.footer{
+    background-color: black;
+}
+.footer .box-container{
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+   font-size: 2rem;
+   padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size:1.5rem;
+    color: darkgray;
+    padding: 0.3rem 0;
+}
+.footer .box-container .box .payment img{
+    padding-top:2rem;
+    width: 20rem;
+    position: absolute;
+}
+.payment-link {
+    color:green;
+    font-size: 16px;
+    border: 1px rgb(218, 186, 9);
+}
+
+.footer .box-container .box2 h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box2  p{
+    font-size:1.5rem;
+    padding: 1rem 0;
+}
+
+
+footer .box-container .box2 .email-box {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* position: relative; */
+    /* margin: 0.5rem 0; */
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+
+.footer .box-container .box2 .email-box input[type="email"] {
+    height: 30px;
+    
+    width: 290px; 
+    padding: 13px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+    /* text-transform: lowercase; */
+}
+
+.footer .box-container .box2 .checkbox{
+    font-size: 1.5rem;
+    /* padding: 4rem 3rem; */
+    margin-bottom: 10px;
+    text-transform: lowercase;
+} 
+.footer .box-container .box2 .checkbox span{
+    color:darkgray;
+    font-size:1.5rem;
+    text-align: center;
+    text-transform: lowercase;
+
+}
+.footer .box-container .box2 .Checkbox a{
+    font-size:1.5rem;
+    color:darkgray;
+    text-align: center;
+    text-transform: lowercase;
+}
+.footer .box-container .box2 .Checkbox .terms-text{
+    font-size:1.5rem;
+    text-align: center;
+    padding: 1rem 0;;
+    
+}
+.footer .box-container .box2 .btn{
+    padding-top:.5rem 0;
+    color: white;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+
+.footer .box-container .box2 .btn button {
+    background-color:white;
+    color:rgb(54, 52, 52); 
+    font-size: 1.3rem;
+}
+
+
+
+.footer .box-container .box2 .share a{
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+.footer .box-container .box2 .share a1{
+    color:blue;
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+.footer .box-container .box2 .share a2{
+    color: orange;
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+.footer .box-container .box2 .share a3{
+    color:darkred;
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+
+/* .foot-panel3{
+    background-color:black;
+    color: white;
+    padding-top: 2rem;
+    height: 50px;
+    width: 190px;
+    font-size:2rem;
+    align-items: center;
+    
+} */
+.foot-panel4{
+    background-color: black;
+    color: white;
+    height:60px;
+    /* display: flex; */
+    font-size: 1.3rem;
+    text-align: center;
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .navbar a {
+        font-size: 1.9rem;
+        margin: 2rem 2.5rem; /* Fix the typo here, should be a dot (.) before 5rem */
+        display: block;
+        background-color:white;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+.heading{
+        font-size:2.5rem;
+    }
+    .footer{
+        text-align: center;
+    }
+}
